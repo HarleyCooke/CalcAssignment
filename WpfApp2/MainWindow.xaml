@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="300.534" BorderBrush="#FF2684B9" Foreground="#FFCF9C9C" FontFamily="Georgia" FontSize="16" Visibility="Visible" Opacity="0.9" WindowStyle="ToolWindow" ResizeMode="NoResize">
+        <Window.Background>
+        <ImageBrush TileMode="None" ImageSource="Calc.png" />
+        </Window.Background>
+    <Grid Opacity="0.85">
+        <Grid HorizontalAlignment="Left" Height="254" Margin="8,144,0,0" VerticalAlignment="Top" Width="276">
+            <Button x:Name="Enter_9" Content="9" HorizontalAlignment="Left" Margin="13,76,0,0" VerticalAlignment="Top" Width="42" Click="Enter_9_Click" Height="34"/>
+            <Button x:Name="Enter_8" Content="8" HorizontalAlignment="Left" Margin="55,76,0,0" VerticalAlignment="Top" Width="42" Click="Enter_8_Click" Height="34"/>
+            <Button x:Name="Enter_7" Content="7" HorizontalAlignment="Left" Margin="97,76,0,0" VerticalAlignment="Top" Width="42" Click="Enter_7_Click" Height="34"/>
+            <Button x:Name="Enter_0" Content="0" HorizontalAlignment="Left" Margin="13,175,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="4.298,0.931" Click="Enter_0_Click" Height="34"/>
+            <Button x:Name="Enter_Add" Content="+" HorizontalAlignment="Left" Margin="139,76,0,0" VerticalAlignment="Top" Width="39" Click="Enter_Add_Click" Height="34"/>
+            <Button x:Name="Enter_Minus" Content="-" HorizontalAlignment="Left" Margin="178,76,0,0" VerticalAlignment="Top" Width="42" Click="Enter_Minus_Click" Height="34"/>
+            <Button x:Name="Enter_6" Content="6" HorizontalAlignment="Left" Margin="13,110,0,0" VerticalAlignment="Top" Width="42" Click="Enter_6_Click" Height="32"/>
+            <Button x:Name="Enter_4" Content="4" HorizontalAlignment="Left" Margin="97,110,0,0" VerticalAlignment="Top" Width="42" Click="Enter_4_Click" Height="32"/>
+            <Button x:Name="Enter_Multiple" Content="*" HorizontalAlignment="Left" Margin="139,110,0,0" VerticalAlignment="Top" Width="39" Click="Enter_Multiple_Click" Height="32"/>
+            <Button x:Name="Enter_Divide" Content="/" HorizontalAlignment="Left" Margin="178,110,0,0" VerticalAlignment="Top" Width="42" Click="Enter_Divide_Click" Height="32"/>
+            <Button x:Name="Enter_Decimel" Content="." HorizontalAlignment="Left" Margin="220,76,0,0" VerticalAlignment="Top" Width="46" Height="47" Click="Enter_Decimel_Click"/>
+            <Button x:Name="Enter_5" Content="5" HorizontalAlignment="Left" Margin="55,110,0,0" VerticalAlignment="Top" Width="42" Click="Enter_5_Click" Height="32"/>
+            <Button x:Name="Enter_3" Content="3" HorizontalAlignment="Left" Margin="13,142,0,0" VerticalAlignment="Top" Width="42" Click="Enter_3_Click" Height="33"/>
+            <Button x:Name="Enter_1" Content="1" HorizontalAlignment="Left" Margin="97,142,0,0" VerticalAlignment="Top" Width="42" Click="Enter_1_Click" Height="33"/>
+            <Button x:Name="Enter_C" Content="C" HorizontalAlignment="Left" Margin="139,142,0,0" VerticalAlignment="Top" Width="39" Click="Enter_C_Click" Height="33"/>
+            <Button x:Name="Enter_CE" Content="CE" HorizontalAlignment="Left" Margin="178,142,0,0" VerticalAlignment="Top" Width="42" Click="Enter_CE_Click" Height="33"/>
+            <Button x:Name="Enter_Equals" Content="=" HorizontalAlignment="Left" Margin="220,123,0,0" VerticalAlignment="Top" Width="46" Height="86" Click="Enter_Equals_Click"/>
+            <Button x:Name="Enter_2" Content="2" HorizontalAlignment="Left" Margin="55,142,0,0" VerticalAlignment="Top" Width="42" Height="33" Click="Enter_2_Click"/>
+        </Grid>
+        <TextBox x:Name="TextBox_Result" HorizontalAlignment="Left" Height="23" Margin="21,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <Button x:Name="Enter_History" Content="N!" HorizontalAlignment="Left" Margin="147,319,0,0" VerticalAlignment="Top" Width="81" Height="34" Click="Enter_History_Click"/>
+        
+
+    </Grid>
+    
+</Window>
